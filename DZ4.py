@@ -23,7 +23,7 @@ def urov(k, numbers):
         x.append(' + ')
     cheekibreeki = list(itertools.chain(*cheekibreeki))
     cheekibreeki[-1] = ' = 0'
-    return "".join(map(str, cheekibreeki))
+    return "".join(map(str, cheekibreeki)).replace('*x', 'x')
 numbers = random_numbers(k)
 check_list = urov(k, numbers)
 print(check_list)
