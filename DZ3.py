@@ -3,15 +3,20 @@
 from random import randint
 
 
-N = int(input())
-list = []
-for i in range(1,N+1):
-    a = randint(-N,N+1)
-    list.append(a)
-print(list)
+# N = int(input())
+# list = []
+# for i in range(1,N+1):
+#     a = randint(-N,N+1)
+#     list.append(a)
+# print(list)
 
-newlist = []
-for i in list:
-    if i not in newlist:
-        newlist.append(i)
-print(newlist)
+# newlist = []
+# for i in list:
+#     if i not in newlist:
+#         newlist.append(i)
+# print(newlist)
+
+
+a= [1,2,2,2,2,3,1,4]
+
+print(set(a))
